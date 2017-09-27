@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/stabwerke"/>
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/white"
+
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/imes_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/imes_logo"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/rosa"
+                android:layout_gravity="center|top"
+                android:text="Version 1.1  |  für die Technische Mechanik I"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="left"
+            android:gravity="left">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="left">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/red2"
+                        android:text="Allgemeines"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red2"
+                        android:text="Die Stabwerke-App dient als Hilfestellung und stellt kein offizielles Hilfsmittel für die Technische Mechanik da, daher sind alle Angaben der App ohne Gewähr. \nWir befinden uns noch in der Beta-Phase. Falls die App Bugs hat, einfach ein neues Blatt öffnen und von vorne starten ;) \nBei Fragen, Anregungen und Verbesserungsvorschlägen könnt ihr gerne eine E-Mail an uns senden :)"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kontakt:"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/red2"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <ImageButton
+                            android:id="@+id/email"
+                            android:layout_width="28dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/email"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:textSize="13dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/email_text"
+                            android:text="stabwerke@gmail.com"
+                            android:textColor="@color/red2"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <ImageButton
+                            android:id="@+id/email_imes"
+                            android:layout_width="28dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/email"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/email_text_imes"
+                            android:textSize="13dp"
+                            android:text="apps@imes.uni-hannover.de"
+                            android:textColor="@color/red2"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Konzept und Idee:"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/red2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Simon Kleinschmidt B.Sc. und Sissy Liu B.Sc."
+                        android:textColor="@color/red2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Programmierung"
+                        android:textStyle="bold"
+                        android:textColor="@color/red2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Simon Kleinschmidt B.Sc. und Sissy Liu B.Sc."
+                        android:textColor="@color/red2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Grafiken:"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/red2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Sissy Liu B.Sc."
+                        android:textColor="@color/red2"/>
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:id="@+id/back"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="bottom|right"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/zurueck"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="4dp"/>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

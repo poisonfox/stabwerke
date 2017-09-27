@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.sissimon.gitter.DragLayer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/drag_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+        android:id="@+id/joint_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:id="@+id/gesamt">
+
+
+    <RelativeLayout
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gesamt_2">
+    </RelativeLayout>
+<!--->Gitter<!-->
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view3" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></LinearLayout>
+
+    <View
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view" />
+
+    <View
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view2" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="460dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="475dp"
+        android:id="@+id/delete_zone"
+        android:layout_alignBottom="@+id/view3">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bin"/>
+        </LinearLayout>
+
+<!--->Menüleiste<!-->
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="520dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/button_newfile"
+            android:background="@android:color/transparent"
+            android:src="@drawable/button_newfile_big"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/button_festlager"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/button_festlager_big"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+             />
+        <ImageButton
+            android:id="@+id/button_loslager"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/button_loslager_big" />
+        <ImageButton
+            android:id="@+id/button_stab"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/button_stab_big" />
+
+        <ImageButton
+            android:id="@+id/button_kraft"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/lager"
+            android:background="@android:color/transparent"
+            android:src="@drawable/button_kraft_big" />
+
+        <ImageButton
+            android:id="@+id/button_solve"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/lager"
+            android:background="@android:color/transparent"
+            android:src="@drawable/button_solve_big" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>
+</com.sissimon.gitter.DragLayer>

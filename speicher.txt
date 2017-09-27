@@ -1,0 +1,68 @@
+        final ImageButton NewBtn= (ImageButton)findViewById(R.id.button_newfile);
+        NewBtn.setOnClickListener(new Button.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(MainActivity.this,
+                        MainActivity.class);
+                startActivity(myIntent);
+            }
+            });
+
+               //Button Festlager
+        final ImageButton btnOpenPopup_festlager = (ImageButton)findViewById(R.id.button_festlager);
+        btnOpenPopup_festlager.setOnClickListener(new Button.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                LayoutInflater layoutInflater
+                        = (LayoutInflater) getBaseContext()
+                        .getSystemService(LAYOUT_INFLATER_SERVICE);
+
+                LayoutInflater layoutInflater1
+                        = (LayoutInflater) getBaseContext()
+                        .getSystemService(LAYOUT_INFLATER_SERVICE);
+
+                View popupView = layoutInflater.inflate(R.layout.popup_fest, null);
+                View Linear = layoutInflater1.inflate(R.layout.activity_main, null);
+
+                final PopupWindow popupWindow = new PopupWindow(
+                        popupView,
+                        LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT);
+
+                
+                Button btnDismiss_festlager = (Button) popupView.findViewById(R.id.dismiss_festlager);
+                btnDismiss_festlager.setOnClickListener(new Button.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        // TODO Auto-generated method stub
+                        popupWindow.dismiss();
+                    }
+                });
+
+                popupWindow.showAsDropDown(btnOpenPopup_festlager, -22, -232);
+
+                //
+
+                ImageButton add_festlager_1 = (ImageButton) popupView.findViewById(R.id.festlager_1);
+                final LinearLayout Start_f = (LinearLayout) Linear.findViewById(R.id.startfeld);
+
+                add_festlager_1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View arg0) {
+                        addImageView(Start_f);
+                    }
+                });
+
+
+private void addImageView(RelativeLayout layout){
+        ImageView imageView = new ImageView(this);
+        imageView.setImageResource(R.drawable.festlager);
+        RelativeLayout.LayoutParams festlager1_layout_parameter = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        imageView.setLayoutParams(festlager1_layout_parameter);
+        layout.addView(imageView);
+        }

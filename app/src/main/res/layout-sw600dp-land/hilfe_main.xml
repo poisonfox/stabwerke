@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/white"
+        android:layout_margin="125dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/red2"
+            android:textSize="30dp"
+            android:layout_gravity="center|top"
+            android:text="Hinweise"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hilfe_lager"
+                android:id="@+id/Hinweis_Lager"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"/>
+             <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                 android:layout_marginLeft="35dp"
+                android:src="@drawable/hilfe_stab"
+                 android:id="@+id/Hinweis_Stab"
+                 android:scaleType="fitCenter"
+                 android:adjustViewBounds="true"
+                 android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="30dp">
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hilfe_kraft"
+                android:id="@+id/Hinweis_Kraft"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"/>
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/hilfe_sonstiges"
+                android:id="@+id/Hinweis_Sonstiges"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|bottom"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:id="@+id/back"
+                android:background="@android:color/transparent"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/zurueck"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"/>
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>

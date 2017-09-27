@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Stabwerke</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="stroke_width">1dp</string>
+    <string name="lager">Lager</string>
+
+    <color name="green1">#9CC945</color>
+    <color name="green2">#ff0c970d</color>
+    <color name="green3">#33CD45</color>
+    <color name="blue1">#0FB4F9</color>
+    <color name="red1">#E33737</color>
+    <color name="yellow1">#F9CA0D</color>
+    <color name="purple1">#F90F7D</color>
+    <color name="orange1">#FA6A0A</color>
+    <color name="red2">#B20404</color>
+    <color name="grey">#ff88828a</color>
+    <color name="rosa">#C85D5D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
